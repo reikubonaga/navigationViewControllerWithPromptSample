@@ -81,12 +81,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xP-vq-uTY">
+                                <rect key="frame" x="0.0" y="64" width="320" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" symbolic="YES" id="62x-JV-TTJ"/>
+                            <constraint firstAttribute="bottom" secondItem="3xP-vq-uTY" secondAttribute="bottom" constant="403" id="Dsg-bg-eRr"/>
+                            <constraint firstItem="3xP-vq-uTY" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" id="Ekg-dJ-qXh"/>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="centerY" secondItem="MMQ-IT-qOo" secondAttribute="centerY" id="JzS-HC-Rnl"/>
+                            <constraint firstItem="3xP-vq-uTY" firstAttribute="centerX" secondItem="Lei-5M-9Gs" secondAttribute="centerX" id="kCh-fN-IVa"/>
                             <constraint firstAttribute="trailing" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="20" symbolic="YES" id="pXB-RP-Zz6"/>
+                            <constraint firstItem="3xP-vq-uTY" firstAttribute="top" secondItem="zvo-dd-3SW" secondAttribute="bottom" id="wNA-c9-Lxy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
