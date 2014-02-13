@@ -42,6 +42,22 @@
     [self configureView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    // 表示位置がづれるので一度消しておく
+    self.title = nil;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    // 表示位置が確定してから表示
+    self.title = @"Detail";
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
